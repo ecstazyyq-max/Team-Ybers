@@ -1260,7 +1260,7 @@
         Наши принципы: уважение к тиммейтам, дисциплина, конструктивная критика, отсутствие токсичности и регулярные тренировки. Мы не обещаем мгновенный путь в профессиональный киберспорт — результат зависит от труда, времени и прогресса каждого игрока.
       </p>
       <p class="about-p" data-i18n="about_p3">
-        Путь Team Ybers начался не в лобби Доты, а в легендарной игре UBA (Your Bizarre Adventure) в Roblox. Постепенно вокруг игры сформировалось крепкое комьюнити, которое переросло в Discord-сервер «Юберы».
+        Путь Team Ybers начался не в лобби Доты, а в легендарной игре YBA (Your Bizarre Adventure) в Roblox. Постепенно вокруг игры сформировалось крепкое комьюнити, которое переросло в Discord-сервер «Юберы».
       </p>
       <p class="about-p" data-i18n="about_p4">
         На сегодняшний день наш сервер насчитывает более 70 человек, объединенных любовью к играм и общению. В 2026 году мы приняли судьбоносное решение — выйти на новый уровень и создать профессиональную киберспортивную команду. Так появились Team Ybers.
@@ -1317,11 +1317,11 @@
         <input type="hidden" name="_captcha" value="false" />
         <div class="form-group">
           <label class="form-label" data-i18n="form_your_name">Ваше имя / Никнейм</label>
-          <input type="text" name="name" class="form-input" placeholder="Алексей" required />
+          <input type="text" name="name" class="form-input" placeholder="Алексей" data-i18n-ph="ph_name" required />
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_contact_info">Telegram или Email для ответа</label>
-          <input type="text" name="contact" class="form-input" placeholder="@username или name@gmail.com" required />
+          <input type="text" name="contact" class="form-input" placeholder="@username или name@gmail.com" data-i18n-ph="ph_contact" required />
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_topic">Тема обращения</label>
@@ -1334,7 +1334,7 @@
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_message">Сообщение</label>
-          <textarea name="message" class="form-textarea" rows="4" placeholder="Текст вашего сообщения..." required></textarea>
+          <textarea name="message" class="form-textarea" rows="4" placeholder="Текст вашего сообщения..." data-i18n-ph="ph_message" required></textarea>
         </div>
 
         <!-- LEGAL CHECKBOXES -->
@@ -1451,11 +1451,11 @@
         <input type="hidden" name="_captcha" value="false" />
         <div class="form-group">
           <label class="form-label" data-i18n="form_nick">Никнейм</label>
-          <input type="text" name="nickname" class="form-input" placeholder="marysya" required />
+          <input type="text" name="nickname" class="form-input" placeholder="marysya" data-i18n-ph="ph_apply_nick" required />
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_tg">Telegram для связи</label>
-          <input type="text" name="telegram" class="form-input" placeholder="@username" required />
+          <input type="text" name="telegram" class="form-input" placeholder="@username" data-i18n-ph="ph_apply_tg" required />
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_direction">Направление</label>
@@ -1468,7 +1468,7 @@
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_rank">Ранг / ПТС / Опыт</label>
-          <input type="text" name="rank" class="form-input" placeholder="3000+ MMR" required />
+          <input type="text" name="rank" class="form-input" placeholder="3000+ MMR" data-i18n-ph="ph_apply_rank" required />
         </div>
 
         <label class="form-checkbox-label">
@@ -1493,11 +1493,11 @@
         <input type="hidden" name="_captcha" value="false" />
         <div class="form-group">
           <label class="form-label" data-i18n="form_merch_name">Ваше имя / Никнейм</label>
-          <input type="text" name="name" class="form-input" placeholder="Маруся" required />
+          <input type="text" name="name" class="form-input" placeholder="Маруся" data-i18n-ph="ph_merch_name" required />
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_merch_contact">Telegram / Email для уведомления</label>
-          <input type="text" name="contact" class="form-input" placeholder="@username или name@gmail.com" required />
+          <input type="text" name="contact" class="form-input" placeholder="@username или name@gmail.com" data-i18n-ph="ph_merch_contact" required />
         </div>
         <div class="form-group">
           <label class="form-label" data-i18n="form_merch_item">Что вас больше всего интересует?</label>
@@ -1803,7 +1803,7 @@
       }
     };
 
-    // 4. FULL SITE TRANSLATIONS
+    // 4. FULL SITE TRANSLATIONS (INCLUDING PLACEHOLDERS & FORM DATA)
     const translations = {
       ru: {
         nav_teams: "Команды",
@@ -1872,7 +1872,7 @@
         title_about: "О клубе",
         about_p1: "Team Ybers состоит из основного состава, академии и менеджмента. Академия — это резервный состав для развития перспективных игроков. Лучшие участники академии могут перейти в основу после отбора, стабильных тренировок и успешных выступлений на турнирах.",
         about_p2: "Наши принципы: уважение к тиммейтам, дисциплина, конструктивная критика, отсутствие токсичности и регулярные тренировки. Мы не обещаем мгновенный путь в профессиональный киберспорт — результат зависит от труда, времени и прогресса каждого игрока.",
-        about_p3: "Путь Team Ybers начался не в лобби Доты, а в легендарной игре UBA (Your Bizarre Adventure) в Roblox. Постепенно вокруг игры сформировалось крепкое комьюнити, которое переросло в Discord-сервер «Юберы».",
+        about_p3: "Путь Team Ybers начался не в лобби Доты, а в легендарной игре YBA (Your Bizarre Adventure) в Roblox. Постепенно вокруг игры сформировалось крепкое комьюнити, которое переросло в Discord-сервер «Юберы».",
         about_p4: "На сегодняшний день наш сервер насчитывает более 70 человек, объединенных любовью к играм и общению. В 2026 году мы приняли судьбоносное решение — выйти на новый уровень и создать профессиональную киберспортивную команду. Так появились Team Ybers.",
         tag_partners: "Sponsorship & Synergies",
         title_partners: "Партнёры",
@@ -1934,7 +1934,16 @@
         leg_personal: "Обработка персональных данных",
         leg_ad: "Рекламная рассылка",
         cookie_banner_text: "Мы используем файлы cookie для обеспечения корректной работы сайта, сохранения ваших настроек (тема, язык) и аналитики. Подробнее в Политике использования файлов cookie.",
-        btn_cookie_ok: "Понятно"
+        btn_cookie_ok: "Понятно",
+        // Placeholders in Russian
+        ph_name: "Алексей",
+        ph_contact: "@username или name@gmail.com",
+        ph_message: "Текст вашего сообщения...",
+        ph_apply_nick: "marysya",
+        ph_apply_tg: "@username",
+        ph_apply_rank: "3000+ MMR",
+        ph_merch_name: "Маруся",
+        ph_merch_contact: "@username или name@gmail.com"
       },
       en: {
         nav_teams: "Teams",
@@ -2003,7 +2012,7 @@
         title_about: "About Club",
         about_p1: "Team Ybers consists of a main roster, academy, and management. The Academy is a reserve roster designed to develop promising players. The best academy players can advance to the main lineup following trials, consistent training, and tournament performance.",
         about_p2: "Our core principles: respect for teammates, discipline, constructive feedback, zero toxicity, and regular team practices. We do not promise an instant path to pro esports — results depend on dedication, time, and each player's growth.",
-        about_p3: "The journey of Team Ybers started not in a Dota lobby, but in the legendary Roblox game UBA (Your Bizarre Adventure). A tight-knit community gradually formed around the game, eventually evolving into the 'Ybers' Discord server.",
+        about_p3: "The journey of Team Ybers started not in a Dota lobby, but in the legendary Roblox game YBA (Your Bizarre Adventure). A tight-knit community gradually formed around the game, eventually evolving into the 'Ybers' Discord server.",
         about_p4: "Today, our server unites over 70 passionate gaming and community members. In 2026, we made the decisive leap to elevate our ambitions and establish a professional esports organization. This marked the birth of Team Ybers.",
         tag_partners: "Sponsorship & Synergies",
         title_partners: "Partners",
@@ -2065,7 +2074,16 @@
         leg_personal: "Data Processing Consent",
         leg_ad: "Marketing Updates",
         cookie_banner_text: "We use cookies to ensure the website functions properly, store your preferences (theme, language), and analyze traffic. Read more in our Cookie Policy.",
-        btn_cookie_ok: "Got it"
+        btn_cookie_ok: "Got it",
+        // Placeholders in English
+        ph_name: "Alex",
+        ph_contact: "@username or name@gmail.com",
+        ph_message: "Your message here...",
+        ph_apply_nick: "marysya",
+        ph_apply_tg: "@username",
+        ph_apply_rank: "3000+ MMR",
+        ph_merch_name: "Maria",
+        ph_merch_contact: "@username or name@gmail.com"
       }
     };
 
@@ -2077,10 +2095,19 @@
       document.getElementById('lang-ru-btn').classList.toggle('active', lang === 'ru');
       document.getElementById('lang-en-btn').classList.toggle('active', lang === 'en');
 
+      // Update inner texts
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
           el.innerText = translations[lang][key];
+        }
+      });
+
+      // Update placeholders for inputs and textareas
+      document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+        const key = el.getAttribute('data-i18n-ph');
+        if (translations[lang] && translations[lang][key]) {
+          el.setAttribute('placeholder', translations[lang][key]);
         }
       });
 
